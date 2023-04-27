@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <h1>Vote Survey Results</h1>
+</head>
+<style>
+table, th, td {
+  border:1px solid rgb(0, 0, 0);
+  background-color: rgb(243, 234, 215);
+}
+</style>
+<body>
+
+<table style="width:50%">
+  <tr>
+    <th>Party Name</th>
+    <th>Vote Count</th>
+  </tr>
+  {% for i in results %}
+  <tr>
+    <td>{{i.party_name}}</td>
+    <td>{{i.vote_count}}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+</body>
+</html> 

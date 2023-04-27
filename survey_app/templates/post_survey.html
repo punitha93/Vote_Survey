@@ -1,0 +1,50 @@
+<Html>  
+    <head>   
+    <title>  
+    Fill Survey
+    </title>  
+    </head>  
+    <body bgcolor="Lightskyblue">  
+    <br>  
+    <br>  
+    <form action="/survey/fill/" method="post" enctype="application/x-www-form-urlencoded">
+        {% csrf_token %}
+    <label> First_name </label>         
+    <input type="text" name="firstname" size="15" required/> <br> <br>  
+    <label> Last_name: </label>         
+    <input type="text" name="lastname" size="15" required/> <br> <br>       
+     
+    Gender:
+    <br> 
+    <label> <input type="radio" name="gender" value="male" required> Male </label> <br> 
+    <label> <input type="radio" name="gender" value="female"> Female </label><br> 
+    <label> <input type="radio" name="gender" value="other"> Other </label><br>
+    <br>  
+    <br>  
+      
+    <label>   
+    DOB :  
+    </label>  
+    <input type="text" name="dob"  required/>  <br> <br> 
+     
+    <label>
+    City: 
+    </label>  
+    <input type="text" name="city"  required/>  <br> <br> 
+    
+    <label>   
+    Party Names :  
+    </label>   
+    <select name = "party_name" required>  
+    <option value="AAA">AAA</option>  
+    <option value="AAB">AAB</option>  
+    <option value="AAC">AAC</option>  
+    <option value="AAD">AAD</option>
+    </select>           
+    <br>  
+    <br> 
+    
+    <input type="submit" value="Submit"/>  
+    </form>  
+    </body>  
+    </html>  
